@@ -7,7 +7,7 @@
             </a>
             <nav id="main-nav">
                 <% for (var i in theme.menu) { %>
-                    <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                    <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __('index.'+i.toLowerCase()) %></a>
                 <% } %>
             </nav>
             <% if(theme.customize.profile && theme.customize.profile.enabled) { %>
