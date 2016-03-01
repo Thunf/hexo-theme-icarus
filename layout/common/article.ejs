@@ -11,7 +11,13 @@
                     <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
                     <%- partial('post/category') %>
                     <%- partial('post/tag') %>
+                    <% if (is_post()) { %>
+                    <span id="busuanzi_container_page_pv" class="right">
+                        已被围观<span id="busuanzi_value_page_pv"></span>次
+                    </span>
+                    <% } %>
                 </div>
+
             </header>
         <% } %>
         <div class="article-entry" itemprop="articleBody">
