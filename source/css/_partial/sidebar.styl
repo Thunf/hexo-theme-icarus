@@ -86,26 +86,33 @@
     @extend $block
     cursor: pointer
     text-align: center
-    width: 64px
-    height: 64px
+    width: 40px
+    height: 40px
     color: white
-    font-size: 32px
-    line-height: 64px
+    font-size: 25px
+    line-height: 38px
     background: color-default
     border-radius: 4px
+    bottom: 20px
+    position: fixed
+    display: none
+    opacity: .77
     @media mq-mobile
         width: 54px
         height: 54px
         font-size: 28px
-        line-height: 54px
+        line-height: 50px
     @media mq-mini
         width: 54px
         height: 54px
         font-size: 28px
-        line-height: 54px
-    &.fix
-        bottom: 20px
-        position: fixed
+        line-height: 50px
+    &:before
+        cursor: pointer
+    &:hover
+        opacity: 1
+    // &.fix
+    //     display: block
 
 #recent-post
     li
