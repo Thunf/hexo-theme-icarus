@@ -3,13 +3,15 @@
     <div id="container">
         <%- partial('common/header') %>
         <div class="outer">
-            <% if (theme.customize.profile.enabled) { %>
-                <%- partial('common/profile', null, {cache: !config.relative_link}) %>
-            <% } %>
             <section id="main"><%- body %></section>
-            <% if (theme.customize.sidebar) { %>
-                <%- partial('common/sidebar', null, {cache: !config.relative_link}) %>
-            <% } %>
+            <section id="side">
+                <% if (theme.customize.profile.enabled) { %>
+                    <%- partial('common/profile', null, {cache: !config.relative_link}) %>
+                <% } %>
+                <% if (theme.customize.sidebar) { %>
+                    <%- partial('common/sidebar', null, {cache: !config.relative_link}) %>
+                <% } %>
+            </section>
         </div>
         <%- partial('common/footer', null, {cache: !config.relative_link}) %>
         <%- partial('common/scripts') %>

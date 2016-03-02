@@ -41,7 +41,8 @@ profile-avatar-size = 128px
 block-margin = 40px
 article-padding = 20px
 mobile-nav-width = 280px
-main-column = 7
+main-column = 9
+side-column = 3
 sidebar-column = 3
 profile-column = 3
 sidebar-column-tablet = 4
@@ -63,12 +64,16 @@ if _sidebar-column is 0 and _profile-column is 0
     columns = 10
     main-column = 10
 else
-    columns = main-column + _sidebar-column + _profile-column
+    // columns = main-column + _sidebar-column + _profile-column
+    // 变成双列，9:3
+    columns = main-column + side-column
 
 if sidebar
     main-column-tablet = 6
+    side-column-tablet = 3
     if profile
         main-column-tablet = 9
+        side-column-tablet = 3
 
 // Media queries
 mq-mini = "screen and (max-width: 559px)"
