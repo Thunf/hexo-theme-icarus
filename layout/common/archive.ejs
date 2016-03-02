@@ -14,7 +14,7 @@
                 <section class="archives-wrap">
                     <div class="archives">
             <% } %>
-            <%- partial('summary', {post: post, archive: true}) %>
+            <%- partial('summary', {post: post, archive: true, show_excerpt: false}) %>
         <% });
         if (page.posts.length) { %>
         </div></section>

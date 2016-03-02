@@ -1,6 +1,6 @@
 <article class="archive-article archive-type-summary">
-    <% if(theme.customize.thumbnail == true) { %>
-    <div class="archive-article-thumbnail">
+    <% if(theme.customize.thumbnail == true && !!post.thumbnail) { %>
+    <div class="archive-article-thumbnail right">
         <%- partial('thumbnail.ejs', { post: post }) %>
     </div>
     <% } %>
@@ -13,11 +13,13 @@
                 <%- partial('post/tag') %>
             </div>
         </header>
+        <% if (show_excerpt) { %>
         <div class="article-entry">
             <p><%- excerpt(post) %></p>
             <p class="article-more-link">
                 <a href="<%- url_for(post.path) %>#more"><%= __('article.more') %></a>
             </p>
         </div>
+        <% } %>
     </div>
 </article>

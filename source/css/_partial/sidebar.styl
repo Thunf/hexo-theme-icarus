@@ -35,7 +35,8 @@
         margin-right: 5px
 
 .widget-wrap
-    margin: block-margin 10px
+    // margin: block-margin 10px
+    margin: block-margin 0
     @media mq-mini
         margin: block-margin 20px
 
@@ -44,7 +45,7 @@
     margin-bottom: 0
 
 .widget
-    padding: 15px 5px
+    // padding: 15px 5px
     a
         color: color-sidebar-text
         text-decoration: none
@@ -116,8 +117,10 @@
 
 #recent-post
     li
+        @extend $block
         clearfix()
-        padding: 10px 0 10px 94px
+        padding: 10px 0 10px 106px
+        margin-top: 10px
     &.no-thumbnail
         li
             padding: 10px 0px
