@@ -10,12 +10,16 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                <%= site.posts.length %>
-                <span><%= (site.posts.length > 1 ? __('profile.posts') : __('profile.post')) %></span>
+                <a class="profile-link" <%- theme.menu.hasOwnProperty('Archives') ? ('href="/' + theme.menu.Archives + '"'):'' %> >
+                    <%= site.posts.length %>
+                    <span><%= (site.posts.length > 1 ? __('profile.posts') : __('profile.post')) %></span>
+                </a>                
             </div>
             <div class="article-info-block">
-                <%= site.tags.length %>
-                <span><%= (site.tags.length > 1 ? __('profile.tags') : __('profile.tag')) %></span>
+                <a class="profile-link" <%- theme.menu.hasOwnProperty('Tags') ? ('href="/' + theme.menu.Tags + '"'):'' %> >
+                    <%= site.tags.length %>
+                    <span><%= (site.tags.length > 1 ? __('profile.tags') : __('profile.tag')) %></span>
+                </a>                
             </div>
         </div>
         <% if(theme.customize.social_links) { %>
