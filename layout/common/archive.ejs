@@ -27,7 +27,7 @@
         </div>
         <div class="archives">
         <% page.posts.each(function (post, i) { %>
-            <%- partial('summary', {post: post, archive: false}) %>
+            <%- partial('summary', {post: post, archive: false, show_excerpt: false}) %>
         <% }); %>
         </div></section>
         <%
@@ -39,7 +39,7 @@
         </div>
         <div class="archives">
         <% page.posts.each(function (post, i) { %>
-            <%- partial('summary', {post: post, archive: false}) %>
+            <%- partial('summary', {post: post, archive: false, show_excerpt: false}) %>
         <% }); %>
         </div></section>
         <%
