@@ -18,13 +18,13 @@ customize:
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: Thunf
-        author_title: 不会摄影的设计不是好前端
+        author_title: 沉醉不知归路
         location: Beijing, China
         follow: https://github.com/thunf/
     highlight: monokai
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: favicon.ico# path to favicon
+    favicon: favicon.ico # path to favicon
     social_links:
         github: http://github.com/thunf
         # twitter: /
