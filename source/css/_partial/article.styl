@@ -350,8 +350,10 @@ ol.toc
     line-height 1em
     font-size 0.8em
     float right
-    position: relative
-    z-index: 1
+    position relative
+    z-index 1
+    @media mq-mini
+        float none
     .toc
         padding 0
         li

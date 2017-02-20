@@ -37,6 +37,10 @@ code
     font-family: font-mono
     background-color: #f8f8f8
 
+p, ul
+    @media mq-mini
+        word-break: break-all
+
 .outer
     clearfix()
     max-width: (column-width + gutter-width) * columns + gutter-width
