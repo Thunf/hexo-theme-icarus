@@ -1,7 +1,8 @@
 <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+            &copy; <%= date(new Date(), 'YYYY') %>
+            <script>document.write(location.hostname || "<%= config.author || config.title %>")</script>
             <span id="busuanzi_container_site_pv">已被围观<span id="busuanzi_value_site_pv"></span>次</span>
             <br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.

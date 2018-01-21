@@ -56,7 +56,7 @@ thumbnail: true
 
 # Contacts
 contacts:
-  github: http://github.com/ppoffice/hexo-theme-icarus
+  github: https://github.com/ppoffice/hexo-theme-icarus
   twitter: '#'
   facebook: '#'
   dribbble: '#'
